@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>David Andrade Barbosa · Web Designer</title>
+<meta name="description" content="Portfólio de David Andrade Barbosa, Web Designer e desenvolvedor de sistemas web em Votorantim, SP.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader" role="status" aria-live="polite">
+  <div class="ld-name" id="ld-name"></div>
+  <div class="ld-bar"><i id="ld-fill"></i></div>
+  <div class="ld-pct" id="ld-pct">0%</div>
+</div>
+
+<div id="stage" aria-hidden="true">
+  <div id="film-wrap">
+    <video id="film" muted playsinline preload="auto" disablepictureinpicture></video>
+    <svg id="contact-frame" viewBox="0 0 1280 720" preserveAspectRatio="none">
+      <rect x="395" y="6" width="450" height="418" rx="34" ry="34" pathLength="1"></rect>
+    </svg>
+  </div>
+</div>
+
+<header id="topbar">
+  <a class="brand" href="#" data-nav="home" id="brand"></a>
+  <nav id="nav" aria-label="Seções"></nav>
+</header>
+<div id="progress"><i></i></div>
+<div id="hint"><span id="hint-text"></span><b></b></div>
+
+<main id="panels">
+  <section class="panel intro" id="p-intro">
+    <div class="hello" id="in-hello"></div>
+    <h1><span id="in-one"></span><span id="in-two" class="accent"></span></h1>
+    <p class="role" id="in-role"></p>
+    <p class="status"><i class="dot"></i><span id="in-status"></span></p>
+  </section>
+
+  <section class="panel about" id="p-about">
+    <div class="glass">
+      <div class="eyebrow" id="ab-eyebrow"></div>
+      <h2 id="ab-title"></h2>
+      <p id="ab-text"></p>
+      <div class="stats" id="ab-stats"></div>
+    </div>
+  </section>
+
+  <section class="panel work" id="p-work">
+    <div class="work-head">
+      <div class="eyebrow" id="wk-eyebrow"></div>
+      <h2 id="wk-title"></h2>
+    </div>
+    <div class="cards" id="wk-cards"></div>
+  </section>
+
+  <section class="panel skills" id="p-skills">
+    <div class="glass">
+      <div class="eyebrow" id="sk-eyebrow"></div>
+      <h2 id="sk-title"></h2>
+      <div class="chips" id="sk-chips"></div>
+    </div>
+  </section>
+
+  <section class="panel resume" id="p-resume">
+    <div class="paper" id="rs-paper">
+      <div class="eyebrow" id="rs-eyebrow"></div>
+      <h2 id="rs-title"></h2>
+      <div id="rs-body"></div>
+      <a class="btn" id="rs-btn" href="#"></a>
+    </div>
+  </section>
+
+  <section class="panel contact" id="p-contact">
+    <div class="glass">
+      <div class="eyebrow" id="ct-eyebrow"></div>
+      <h2 id="ct-title"></h2>
+      <p id="ct-text"></p>
+      <a class="big-link" id="ct-email" href="#"></a>
+      <div class="links" id="ct-links"></div>
+      <div class="city" id="ct-city"></div>
+    </div>
+  </section>
+</main>
+
+<div id="spacer"></div>
+
+<noscript><p style="position:fixed;inset:0;display:grid;place-items:center;color:#f5efe7">Ative o JavaScript para ver o portfólio.</p></noscript>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
